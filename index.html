@@ -6,24 +6,26 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 			body {
+				font-family: "Gothic A1", serif;
 				text-align:center;
-				margin: auto;
+				margin: 0 auto;
 			}
 			div {
-				width:400px;
+				width:600px;
+			}
+			.text_container {
 				text-align:left;
 			}
-			.Introduce {
-        			font-family: "Gothic A1", serif;
+			#introduce {
+				text-align:left;
         			font-weight: 400;
-        			font-style: normal;
       			}
-			.Projects {
+			#projects {
 			}
 		</style>
 	</head>
 	<body>
-		<div class="Introduce">
+		<div id="introduce">
 			<h1>Introduce</h1>
 			<h2>근원을 탐구하는 개발자</h2>
 			<h3>
@@ -35,7 +37,10 @@
 		
 		<div class="Projects">
 			<h1>Projects</h1>
-			<!-- <h2> 프로젝트 명 </h2> -->
+			<h2> 프로젝트 명 </h2>
+			<div class="text_container">
+				프로젝트에 대한 설명, 설명, 설명 
+			</div>
 		</div>
 	</body>
 </html>
