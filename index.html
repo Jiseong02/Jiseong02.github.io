@@ -97,9 +97,33 @@
 			<h1>Projects</h1>
 			<hr>
 			<h2> DOCKER를 사용한 범용성 높은 홈서버 구축 프로젝트(진행중)</h2>
+			<h3> Information </h3>
 			<div class="text_container">
-				
+				<ul>OS: Linux Ubuntu 24.04.1 LTS</ul>
+				<ul>Monitoring: Netdata</ul>
+				<ul>Reverse Proxy: Caddy</ul>
+				<ul>Database: MySQL</ul>
+				<ul>WAS(Main Server): Java Spring boot</ul> 
 			</div>
+			
+			<h3>Completed</h3>
+			<ol>
+				서버용 컴퓨터 확보 및 OS 설치
+				<image src="/images/machine.jpg"></image>
+			</ol>
+			<ol>
+				서버 환경 구성 (포트 포워딩(바인딩) 설정, Docker 설치 후 필요한 Image 찾아서 Container 세팅)
+			</ol>
+			<ol>
+				netdata를 이용하여 모니터링 환경 구축
+				<image src="/images/netdata.PNG"></image>
+			</ol>
+			
+			<h3>Plan</h3>
+			<ol>Github Actions를 이용하여 CI/CD 파이프라인 구축</ol>
+			<ol>서버에서 제공할 임시 서비스 선정</ol>
+			<ol>도메인 구매 후 유지</ol>
+			<ol>추가 보안 조치 이후 공개</ol>
 		</div>
 	</body>
 </html>
