@@ -1,2 +1,2 @@
-# PPmwaungmwaung.github.io
+# Jiseong02.github.io
 나의 포트폴리오 웹사이트
