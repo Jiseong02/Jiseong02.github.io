@@ -1,24 +1,24 @@
-- title: WAS
-  content:
+- category: WAS
+  items:
     - Spring
 
-- title: Database
-  content:
+- category: Database
+  items:
     - MySQL
     - MongoDB
 
-- title: CI/CD
-  content:  
+- category: CI/CD
+  items:  
     - Kubernetes
     - Docker
     - Github Actions
 
-- title: OS
-  content:
+- category: OS
+  items:
     - Ubuntu Linux
 
-- title: Languages
-  content:  
+- category: Languages
+  items:  
     - C, C++
     - Java
     - C#
