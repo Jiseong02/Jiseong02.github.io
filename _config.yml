@@ -1,1 +1,4 @@
-
+title: 나지성의 포트폴리오
+description: 개인 프로젝트 및 기술 소개
+markdown: kramdown
+theme: minima  # 또는 원하는 테마 제거
