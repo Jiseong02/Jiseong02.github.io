@@ -35,7 +35,7 @@
   hc: 4
   role: backend (WAS, DB, Server, LLM)
   result:
-    - github: https://github.com/parkpaku/parkpaku_back/tree/main
+    - github: https://github.com/Jiseong02/GDG-Back
     - items:
         - title: 이미지
           content: 예시
