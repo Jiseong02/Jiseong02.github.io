@@ -1,16 +1,17 @@
 <section class="project">
-  <h1>{{ include.title }}</h1>
-  <p><strong>기간:</strong> {{ include.duration }}</p>
-  <p><strong>인원:</strong> {{ include.hc }}명</p>
-  <p><strong>역할:</strong> {{ include.role }}</p>
+  <h1>projects</h1>h1>
+  <h2>{{ include.title }}</h2>
+  <p><strong>Duration:</strong> {{ include.duration }}</p>
+  <p><strong>HC:</strong> {{ include.hc }}명</p>
+  <p><strong>Role:</strong> {{ include.role }}</p>
 
-  <h2>📌 기획</h2>
+  <h3>📌 Planning</h3>
   {% for plan in include.planning %}
     <p><strong>문제:</strong> {{ plan.problem }}</p>
     <p><strong>해결:</strong> {{ plan.solution }}</p>
   {% endfor %}
 
-  <h2>✅ 결과물</h2>
+  <h3>✅ Result</h3>
   <ul>
     {% for result in include.result %}
       <li><a href="{{ result.github }}" target="_blank">🔗 GitHub</a></li>
@@ -20,7 +21,7 @@
     {% endfor %}
   </ul>
 
-  <h2>💻 개발</h2>
+  <h3>💻 Develop</h3>
   {% for section in include.develop %}
     <h3>{{ section.domain }}</h3>
     <ul>
@@ -30,14 +31,14 @@
     </ul>
   {% endfor %}
 
-  <h2>🐛 이슈</h2>
+  <h3>🐛 Issues</h3>
   <ul>
     {% for issue in include.issues %}
       <li>{{ issue }}</li>
     {% endfor %}
   </ul>
 
-  <h2>📝 배운 점</h2>
+  <h3>📝 Takeaways</h3>
   <ul>
     {% for takeaway in include.takeaways %}
       <li>{{ takeaway }}</li>
