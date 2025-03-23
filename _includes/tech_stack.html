@@ -1,0 +1,14 @@
+<section id="tech_stack" class="part_container">
+  <h1>Tech stack</h1>
+  <hr>
+  <div id="techs">
+    {% for tech in site.data.tech_stack %}
+      <div class="tech">
+        <h2>{{ tech.category }}</h2>
+          {% for item in tech.items %}
+            {{ item }}<br>
+					{% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
