@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>나지성의 포트폴리오</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+			body {
+				font-family: "Gothic A1", serif;
+				text-align:center;
+			}
+			h1 {
+				font-size:60px;
+				margin-bottom:5px;
+			}
+			h2 {
+				font-size:30px;
+			}
+			h3 {
+				font-size:25px;
+			}
+			img {
+				width:200px;
+				height:200px;
+			}
+			#me {
+				color:blue;
+				font-size:30px;
+			}
+			#techs {
+				width:70%;
+				
+				display: flex;
+				justify-content:space-between;
+				flex-wrap: wrap;
+			}
+			.tech {
+				width:40%;
+				white-space:pre-line;
+			}
+			.part_container {
+				margin:10%;
+				text-align:left;
+			}
+		</style>
+	</head>
+	<body>
+    <main>
+      {{ content }}
+    </main>
+	</body>
+</html>
