@@ -28,22 +28,15 @@
 				font-size:30px;
 			}
 			#techs {
- 				width:70%;
- 				
- 				display: flex;
- 				justify-content:space-between;
- 				/*justify-content:space-between;*/
- 				gap: 2rem;
- 				flex-wrap: wrap;
- 			}
- 			.tech {
- 				width:40%;
- 				white-space:pre-line;
- 				width: calc(50% - 1rem);
- 				box-sizing: border-box;
- 				/*width:40%;
- 				white-space:pre-line;*/
- 			}
+  				width: 70%;
+  				display: flex;
+  				flex-wrap: wrap;
+  				gap: 2rem; /* 요소 간 간격 명확히 지정 */
+			}
+			.tech {
+  				width: calc(50% - 1rem); /* 정확히 두 개씩 들어가게 */
+  				box-sizing: border-box;
+			}
 			.part_container {
 				margin:10%;
 				text-align:left;
