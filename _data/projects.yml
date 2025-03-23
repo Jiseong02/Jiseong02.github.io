@@ -4,26 +4,26 @@
   role: backend (WAS, DB)
   result:
     - github: https://github.com/parkpaku/parkpaku_back/tree/main
-      title: 이미지
-      content: 예시
+      items:
+        - title: 이미지
+          content: 예시
   planning:
     - problem: 현대인의 운동 부족 및 도심 속 줄어드는 자연 환경에 대한 경각심 결여
       solution: 사용자가 자연스럽게 주변의 자연 속에서 운동하도록 유도
       domain: 
   develop:
-    - requirements:
-      - domain: 사용자
-        features:
-          - 로그인
-      - domain: 공원
-        features:
-          - 공원 정보 조회
-          - 공원 리뷰 작성
-          - 공원 좋아요 작성
-    - issues:
-      - 로그인 인증 처리 문제
-      - 호스팅 머신 부재
-      - 네트워킹 지식 부족
+    - domain: 사용자
+      features:
+        - 로그인
+    - domain: 공원
+      features:
+        - 공원 정보 조회
+        - 공원 리뷰 작성
+        - 공원 좋아요 작성
+  issues:
+    - 로그인 인증 처리 문제
+    - 호스팅 머신 부재
+    - 네트워킹 지식 부족
   takeaways:
     - 개발 체계의 필요성 경험
     - Github 사용법 숙달
@@ -36,22 +36,22 @@
   role: backend (WAS, DB, Server, LLM)
   result:
     - github: https://github.com/parkpaku/parkpaku_back/tree/main
-      title: 이미지
-      content: 예시
+    - items:
+        - title: 이미지
+          content: 예시
   planning:
     - problem: 현대인의 공황 및 불안 문제가 만연하며 빠른 속도로 늘어나고 있는 반면, 공황 환자를 지원하는 서비스는 부족함. 
       solution: 공황 상황에 적합한 솔루션을 제시하는 LLM을 통해 사용자의 회복을 유도
       domain: 
   develop:
-    - requirements:
-      - domain: 사용자
-        features:
-          - 로그인
-      - domain: 상담
-        features:
-          - 상담 생성
-          - 상담 내역 조회
-    - issues:
-      - 
+    - domain: 사용자
+      features:
+        - 로그인
+    - domain: 상담
+      features:
+        - 상담 생성
+        - 상담 내역 조회
+  issues:
+    - 데이터셋 부족
   takeaways:
     - 
