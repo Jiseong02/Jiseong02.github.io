@@ -1,0 +1,26 @@
+- title: WAS
+  content:
+    - Spring
+
+- title: Database
+  content:
+    - MySQL
+    - MongoDB
+
+- title: CI/CD
+  content:  
+    - Kubernetes
+    - Docker
+    - Github Actions
+
+- title: OS
+  content:
+    - Ubuntu Linux
+
+- title: Languages
+  content:  
+    - C, C++
+    - Java
+    - C#
+    - Python
+    - html, css
