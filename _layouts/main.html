@@ -29,14 +29,16 @@
 			}
 			#techs {
 				width:70%;
-				
 				display: flex;
-				justify-content:space-between;
+				/*justify-content:space-between;*/
+				gap: 2rem;
 				flex-wrap: wrap;
 			}
 			.tech {
-				width:40%;
-				white-space:pre-line;
+				width: calc(50% - 1rem);
+				box-sizing: border-box;
+				/*width:40%;
+				white-space:pre-line;*/
 			}
 			.part_container {
 				margin:10%;
