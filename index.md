@@ -1,6 +1,7 @@
 ---
 layout: main
 title: Main page
+permalink: /
 ---
 
 {% include profile.html %}
