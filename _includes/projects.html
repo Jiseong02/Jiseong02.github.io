@@ -5,13 +5,13 @@
     <section class="project">
       <h2>{{ project.title }}</h2>
       <p><strong>Duration:</strong> {{ project.duration }}</p>
-      <p><strong>HC:</strong> {{ project.hc }}명</p>
+      <p><strong>HC:</strong> {{ project.hc }}</p>
       <p><strong>Role:</strong> {{ project.role }}</p>
 
       <h3>📌 Planning</h3>
       {% for plan in project.planning %}
-        <p><strong>문제:</strong> {{ plan.problem }}</p>
-        <p><strong>해결:</strong> {{ plan.solution }}</p>
+        <p><strong>Problem:</strong> {{ plan.problem }}</p>
+        <p><strong>Solution:</strong> {{ plan.solution }}</p>
       {% endfor %}
 
       <h3>✅ Result</h3>
