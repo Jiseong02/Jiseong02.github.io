@@ -1,48 +1,57 @@
-<section class="project">
-  <h1>projects</h1>h1>
-  <h2>{{ include.title }}</h2>
-  <p><strong>Duration:</strong> {{ include.duration }}</p>
-  <p><strong>HC:</strong> {{ include.hc }}명</p>
-  <p><strong>Role:</strong> {{ include.role }}</p>
+<section class="projects">
+  <h1>Projects</h1>
 
-  <h3>📌 Planning</h3>
-  {% for plan in include.planning %}
-    <p><strong>문제:</strong> {{ plan.problem }}</p>
-    <p><strong>해결:</strong> {{ plan.solution }}</p>
-  {% endfor %}
+  {% for project in site.data.projects %}
+    <section class="project">
+      <h2>{{ project.title }}</h2>
+      <p><strong>Duration:</strong> {{ project.duration }}</p>
+      <p><strong>HC:</strong> {{ project.hc }}명</p>
+      <p><strong>Role:</strong> {{ project.role }}</p>
 
-  <h3>✅ Result</h3>
-  <ul>
-    {% for result in include.result %}
-      <li><a href="{{ result.github }}" target="_blank">🔗 GitHub</a></li>
-      {% for item in result.items %}
-        <li><strong>{{ item.title }}:</strong> {{ item.content }}</li>
+      <h3>📌 Planning</h3>
+      {% for plan in project.planning %}
+        <p><strong>문제:</strong> {{ plan.problem }}</p>
+        <p><strong>해결:</strong> {{ plan.solution }}</p>
       {% endfor %}
-    {% endfor %}
-  </ul>
 
-  <h3>💻 Develop</h3>
-  {% for section in include.develop %}
-    <h3>{{ section.domain }}</h3>
-    <ul>
-      {% for feature in section.features %}
-        <li>{{ feature }}</li>
+      <h3>✅ Result</h3>
+      <ul>
+        {% for result in project.result %}
+          {% if result.github %}
+            <li><a href="{{ result.github }}" target="_blank">🔗 GitHub</a></li>
+          {% endif %}
+          {% if result.items %}
+            {% for item in result.items %}
+              <li><strong>{{ item.title }}:</strong> {{ item.content }}</li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <h3>💻 Develop</h3>
+      {% for section in project.develop %}
+        <h4>{{ section.domain }}</h4>
+        <ul>
+          {% for feature in section.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
       {% endfor %}
-    </ul>
+
+      <h3>🐛 Issues</h3>
+      <ul>
+        {% for issue in project.issues %}
+          <li>{{ issue }}</li>
+        {% endfor %}
+      </ul>
+
+      <h3>📝 Takeaways</h3>
+      <ul>
+        {% for takeaway in project.takeaways %}
+          <li>{{ takeaway }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    <hr>
   {% endfor %}
-
-  <h3>🐛 Issues</h3>
-  <ul>
-    {% for issue in include.issues %}
-      <li>{{ issue }}</li>
-    {% endfor %}
-  </ul>
-
-  <h3>📝 Takeaways</h3>
-  <ul>
-    {% for takeaway in include.takeaways %}
-      <li>{{ takeaway }}</li>
-    {% endfor %}
-  </ul>
 </section>
-<hr>
