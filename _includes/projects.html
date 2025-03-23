@@ -1,0 +1,47 @@
+<section class="project">
+  <h2>{{ include.title }}</h2>
+  <p><strong>기간:</strong> {{ include.duration }}</p>
+  <p><strong>인원:</strong> {{ include.hc }}명</p>
+  <p><strong>역할:</strong> {{ include.role }}</p>
+
+  <h3>📌 기획</h3>
+  {% for plan in include.planning %}
+    <p><strong>문제:</strong> {{ plan.problem }}</p>
+    <p><strong>해결:</strong> {{ plan.solution }}</p>
+  {% endfor %}
+
+  <h3>✅ 결과물</h3>
+  <ul>
+    {% for result in include.result %}
+      <li><a href="{{ result.github }}" target="_blank">🔗 GitHub</a></li>
+      {% for item in result.items %}
+        <li><strong>{{ item.title }}:</strong> {{ item.content }}</li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+
+  <h3>💻 개발</h3>
+  {% for section in include.develop %}
+    <h4>{{ section.domain }}</h4>
+    <ul>
+      {% for feature in section.features %}
+        <li>{{ feature }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+  <h3>🐛 이슈</h3>
+  <ul>
+    {% for issue in include.issues %}
+      <li>{{ issue }}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>📝 배운 점</h3>
+  <ul>
+    {% for takeaway in include.takeaways %}
+      <li>{{ takeaway }}</li>
+    {% endfor %}
+  </ul>
+</section>
+<hr>
