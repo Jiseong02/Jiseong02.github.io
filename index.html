@@ -71,41 +71,15 @@
 			<h1>Tech stack</h1>
 			<hr>
 			<div id="techs">
-				<div class="tech">
-					<h2>Back-end</h2>
-						Java/Spring Boot
-				</div>
-				<div class="tech">
-					<h2>Server</h2>
-						Apache Tomcat
-						Caddy
-				
-						Linux Ubuntu 24.04.1 LTS
-				</div>
-				<div class="tech">
-					<h2>Database</h2>
-						MySQL
-				</div>
-				<div class="tech">
-					<h2>CI/CD</h2>
-						Github Actions
-				</div>
-				<div class="tech">
-					<h2>Language</h2>
-						C/C++
-						C#
-						Java
-						Python
-
-						Html
-						Css
-				</div>
-				<div class="tech">
-					<h2>Others</h2>
-						Docker
-						Unity
-				</div>
-			</div>
+				{% for tech in site.data.tech-stack %}
+					<div class="tech">
+						<h2>{{ tech.category }}</h2>
+							{% for item in tech.items %}
+								{{ item }}<br>
+						  	{% endfor %}
+      					</div>
+    				{% endfor %}
+  			</div>
 		</div>
 		
 		<div id="projects" class="part_container">
