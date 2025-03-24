@@ -19,8 +19,8 @@ img {
 	height:200px;
 }
 div {
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 2% !important;
+	margin-right: 2% !important;
 }
 section {
 	text-align: left;
