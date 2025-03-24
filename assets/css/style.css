@@ -35,9 +35,9 @@ section {
 	font-size:30px;
 }
 #profile {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 2rem;
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
+	grid-gap: 2rem !important;
 }
 #techs {
   	display: flex;
