@@ -5,15 +5,17 @@
     <div class="project"> 
       <h2>{{ project.title }}</h2>
       <div>
-        <p><strong>Duration:</strong> {{ project.duration }}</p>
-        <p><strong>HC:</strong> {{ project.hc }}</p>
-        <p><strong>Role:</strong> {{ project.role }}</p>
+        <p>
+          <strong>Duration:</strong> {{ project.duration }} <br>
+          <strong>HC:</strong> {{ project.hc }} <br>
+          <strong>Role:</strong> {{ project.role }} <br>
+        </p>
 
         <div class="planning">
           <h3>📌 Planning</h3>
           <div>
             {% for planning in project.planning %}
-              <strong>Problem:</strong> {{ planning.problem }}
+              <strong>Problem:</strong> {{ planning.problem }} <br>
               <strong>Solution:</strong> {{ planning.solution }}
             {% endfor %}
           </div>
