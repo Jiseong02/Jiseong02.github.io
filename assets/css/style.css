@@ -17,6 +17,9 @@ img {
 	width:200px;
 	height:200px;
 }
+div {
+	margin-left: 20px;
+}
 #me {
 	color:blue;
 	font-size:30px;
