@@ -35,7 +35,7 @@ section {
   	gap: 2rem; 
 }
 .tech {
-  	width: calc(50% - 1rem); 
+  	width: 25%; 
   	box-sizing: border-box;
 }
 .part_container {
