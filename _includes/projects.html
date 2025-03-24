@@ -1,63 +1,72 @@
-<section id="projects" class="part_container">
+<section class="part_container">
   <h1>Projects</h1>
   <hr>
   {% for project in site.data.projects %}
     <div class="project"> 
       <h2>{{ project.title }}</h2>
-      <p><strong>Duration:</strong> {{ project.duration }}</p>
-      <p><strong>HC:</strong> {{ project.hc }}</p>
-      <p><strong>Role:</strong> {{ project.role }}</p>
+      <div>
+        <p><strong>Duration:</strong> {{ project.duration }}</p>
+        <p><strong>HC:</strong> {{ project.hc }}</p>
+        <p><strong>Role:</strong> {{ project.role }}</p>
 
-      <div class="planning">
-        <h3>📌 Planning</h3>
-        {% for plan in project.planning %}
-          <p><strong>Problem:</strong> {{ plan.problem }}</p>
-          <p><strong>Solution:</strong> {{ plan.solution }}</p>
-        {% endfor %}
-      </div>
-      <div class="result">
-        <h3>✅ Result</h3>
-        <ul>
-          {% for result in project.result %}
-            {% if result.github %}
-              <li><a href="{{ result.github }}" target="_blank">🔗 GitHub</a></li>
-            {% endif %}
-            {% if result.items %}
-              {% for item in result.items %}
-                <li><strong>{{ item.title }}:</strong> {{ item.content }}</li>
+        <div class="planning">
+          <h3>📌 Planning</h3>
+          <div>
+            <p><strong>Problem:</strong> {{ project.planning.problem }}</p>
+            <p><strong>Solution:</strong> {{ project.planning.solution }}</p>
+          </div>
+        </div>
+
+        <div class="result">
+          <h3>✅ Result</h3>
+          <div>
+            <ul>
+              {% for result in project.result %}
+                  <li><a href="{{ result.github }}" target="_blank">🔗 GitHub</a></li>
+                {% for item in result.items %}
+                  <li><strong>{{ item.title }}:</strong> {{ item.content }}</li>
+                {% endfor %}
               {% endfor %}
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="develop">
-        <h3>💻 Develop</h3>
-        {% for section in project.develop %}
-          <h4>{{ section.domain }}</h4>
-          <ul>
-            {% for feature in section.features %}
-              <li>{{ feature }}</li>
-            {% endfor %}
-          </ul>
-        {% endfor %}
-      </div>
-      <div class="issue">
-        <h3>🐛 Issues</h3>
-        <ul>
-          {% for issue in project.issues %}
-            <li>{{ issue }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="takeaway">
-      <h3>📝 Takeaways</h3>
-        <ul>
-          {% for takeaway in project.takeaways %}
-            <li>{{ takeaway }}</li>
-          {% endfor %}
-        </ul>
+            </ul>
+          </div>
+        </div>
+
+        <div class="develop">
+          <h3>💻 Develop</h3>
+            <div>
+              {% for section in project.develop %}
+                <h4>{{ section.domain }}</h4>
+                <ul>
+                  {% for feature in section.features %}
+                    <li>{{ feature }}</li>
+                  {% endfor %}
+                </ul>
+              {% endfor %}
+            </div>
+        </div>
+
+        <div class="issue">
+          <h3>🐛 Issues</h3>
+          <div>
+            <ul>
+              {% for issue in project.issues %}
+                <li>{{ issue }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      
+        <div class="takeaway">
+          <h3>📝 Takeaways</h3>
+          <div>
+            <ul>
+              {% for takeaway in project.takeaways %}
+                <li>{{ takeaway }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <hr>
   {% endfor %}
 </section>
