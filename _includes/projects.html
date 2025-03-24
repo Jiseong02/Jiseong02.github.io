@@ -12,7 +12,7 @@
         </p>
 
         <div class="planning">
-          <h3>📌 Planning</h3>
+          <h3>📌Planning</h3>
           <div>
             {% for planning in project.planning %}
               <strong>Problem:</strong> {{ planning.problem }} <br>
@@ -22,21 +22,19 @@
         </div>
 
         <div class="result">
-          <h3>✅ Result</h3>
+          <h3>✅Result</h3>
           <div>
             {% for result in project.result %}
               <a href="{{ result.github }}" target="_blank">🔗 GitHub</a>
-              <div>
-                {% for item in result.items %}
-                  <strong>{{ item.title }}:</strong> {{ item.content }}
-                {% endfor %}
-              </div>
+              {% for item in result.items %}
+                <strong>{{ item.title }}:</strong> {{ item.content }}
+              {% endfor %}
             {% endfor %}
           </div>
         </div>
 
         <div class="develop">
-          <h3>💻 Develop</h3>
+          <h3>💻Develop</h3>
           <div>
             {% for section in project.develop %}
               <h4>{{ section.domain }}</h4>
@@ -50,7 +48,7 @@
         </div>
 
         <div class="issue">
-          <h3>🐛 Issues</h3>
+          <h3>🐛Issues</h3>
           <ul>
             {% for issue in project.issues %}
               <li>{{ issue }}</li>
@@ -59,7 +57,7 @@
         </div>
       
         <div class="takeaway">
-          <h3>📝 Takeaways</h3>
+          <h3>📝Takeaways</h3>
           <ul>
             {% for takeaway in project.takeaways %}
               <li>{{ takeaway }}</li>

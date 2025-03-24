@@ -6,13 +6,18 @@ body {
 }
 h1 {
 	font-size:60px;
-	margin-bottom:5px;
+	margin-bottom:2%;
 }
 h2 {
 	font-size:30px;
+	margin-bottom: 2%;
 }
 h3 {
 	font-size:25px;
+	margin-bottom: 2%;
+}
+h4 {
+	margin-bottom: 2%;
 }
 img {
 	width:200px;
