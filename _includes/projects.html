@@ -25,7 +25,7 @@
           <h3>✅Result</h3>
           <div>
             {% for result in project.result %}
-              <a href="{{ result.github }}" target="_blank">🔗 GitHub</a>
+              <a href="{{ result.github }}" target="_blank">🔗 GitHub</a> <br>
               {% for item in result.items %}
                 <strong>{{ item.title }}:</strong> {{ item.content }} <br>
               {% endfor %}
