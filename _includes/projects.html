@@ -27,7 +27,7 @@
             {% for result in project.result %}
               <a href="{{ result.github }}" target="_blank">🔗 GitHub</a>
               {% for item in result.items %}
-                <strong>{{ item.title }}:</strong> {{ item.content }}
+                <strong>{{ item.title }}:</strong> {{ item.content }} <br>
               {% endfor %}
             {% endfor %}
           </div>

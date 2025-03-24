@@ -36,7 +36,7 @@
   role: backend (WAS, DB, Server, LLM)
   result:
     - github: https://github.com/Jiseong02/GDG-Back
-    - items:
+      items:
         - title: 이미지
           content: 예시
   planning:
