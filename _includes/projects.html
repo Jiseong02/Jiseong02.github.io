@@ -12,8 +12,10 @@
         <div class="planning">
           <h3>📌 Planning</h3>
           <div>
-            <p><strong>Problem:</strong> {{ project.planning.problem }}</p>
-            <p><strong>Solution:</strong> {{ project.planning.solution }}</p>
+            {% for planning in project.planning %}
+              <p><strong>Problem:</strong> {{ planning.problem }}</p>
+              <p><strong>Solution:</strong> {{ planning.solution }}</p>
+            {% endfor %}
           </div>
         </div>
 
