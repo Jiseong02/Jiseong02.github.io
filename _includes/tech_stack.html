@@ -5,13 +5,13 @@
     {% for tech in site.data.tech_stack %}
       <div class="tech">
         <h2>{{ tech.category }}</h2>
-	  <ul>
+	      <ul>
           {% for item in tech.items %}
             <li>
-		{{ item }}
-	    </li>
-	  {% endfor %}
-	  </ul>
+		          {{ item }}
+	          </li>
+	        {% endfor %}
+	      </ul>
       </div>
     {% endfor %}
   </div>
