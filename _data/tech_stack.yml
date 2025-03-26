@@ -10,9 +10,6 @@
     - Kubernetes
     - Docker
     - Github Actions
-- category: OS
-  items:
-    - Ubuntu Linux
 - category: Languages
   items:  
     - C, C++
@@ -20,3 +17,7 @@
     - C#
     - Python
     - html, css
+- category: OS
+  items:
+    - Ubuntu Linux
+
