@@ -2,9 +2,11 @@
   <h1>Profile</h1>
   <hr>
   <div id="profile">
-    <img src="/assets/images/profile_temp.jpg" id="profile-image">
-    <div id="profile-text">
+    <div id="profile-top">
+      <img src="/assets/images/profile_temp.jpg" id="profile-image">
       {% include profile/introduce.html %}
+    </div>
+    <div id="profile-bottom">
       {% include profile/contact.html %}
     </div>
   </div>
