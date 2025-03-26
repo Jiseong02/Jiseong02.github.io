@@ -39,9 +39,9 @@ section {
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
 }
-#profile {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+#profile-top {
+	display: flex;
+	align-items: center;
 }
 #techs {
 	display: grid;
