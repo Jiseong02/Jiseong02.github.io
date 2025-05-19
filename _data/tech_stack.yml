@@ -20,7 +20,7 @@
 - category: OS
   items:
     - Ubuntu Linux
-- category: Cloud/Third Party
+- category: Cloud
   items:
     - GCP (Vertex AI, Speech)
     - MongoDB Atlas
